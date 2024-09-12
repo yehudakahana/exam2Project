@@ -1,0 +1,124 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a252f;
+    color: #e6f1f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: #2e8b57; 
+    text-align: center; 
+    
+    font-size: 13px; 
+    border-bottom: 3px solid #2e8b57; 
+}
+
+main {
+    padding: 20px;
+}
+
+#soldier-form, #soldiers-list-section, #edit-soldier-section {
+    background-color: #22303d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#soldier-form h2, #soldiers-list-section h2, #edit-soldier-section h2 {
+    color: #2e8b57;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#soldier-form input, #soldier-form select, #soldier-form button, 
+#edit-soldier-section input, #edit-soldier-section select, #edit-soldier-section button {
+    display: block;
+    width: calc(100% - 22px);
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #32465a;
+    color: #e6f1f5;
+}
+
+#soldier-form button, #edit-soldier-section button {
+    background-color: #2e8b57;
+    color: white;
+    cursor: pointer;
+}
+
+#soldier-form button:hover, #edit-soldier-section button:hover {
+    background-color: #216f4a;
+}
+
+#soldiers-table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+#soldiers-table th, #soldiers-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
+}
+
+#soldiers-table th {
+    background-color: #2e8b57;
+    color: white;
+}
+
+#soldiers-table td {
+    background-color: #2d3e4f;
+    color: white;
+}
+
+#soldiers-table tr:nth-child(even) {
+    background-color: #2a3a48;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #216f4a;
+}
+
+.actions button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#edit-soldier-section {
+    display: none;
+}
+
+button.cancel {
+    background-color: #5a6268;
+}
+
+button.cancel:hover {
+    background-color: #444e54;
+}
+
+#soldier-form, #edit-soldier-section {
+    width: 50%;
+    margin: 0 auto 20px auto;
+}
+
+#soldiers-list-section {
+    width: 100%;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BATTALION FORCE MANAGEMENT</title>
+</head>
+<body>
+    <header>
+        <h1>BATTALION FORCE MANAGEMENT</h1>
+    </header>
+    <main>
+        <section id="create-soldier-section">
+          
+            <form id="soldier-form">
+                <input type="text" id="name" placeholder="Full Name" required><br>
+                <input type="text" id="rank" placeholder="Rank" required><br>
+                <input type="text" id="role" placeholder="Role" required><br>
+                <input type="text" id="company" placeholder="platoon" required><br>
+                <select id="status" required>
+                    <option value="Active">Active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select><br>
+                <input type="number" id="missionDuration" placeholder="Mission time (seconds)" required><br>
+                <button type="submit">Create Soldier</button>
+            </form>
+        </section>
+
+        <section id="soldiers-list-section">
+            <h2>Forces Overview</h2>
+            <button id="sort-button">Ascend/Descend</button>
+            <table id="soldiers-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Rank</th>
+                        <th>Role</th>
+                        <th>platoon</th>
+                        <th>Status</th>
+                        <th>Actions</th> 
+                    </tr>
+                </thead>
+                <tbody id="soldiers-body">
+                </tbody>
+            </table>
+            
+        </section>
+
+        <section id="edit-soldier-section">
+            <h2>Edit Soldier</h2>
+            <form>
+                <input type="text" id="edit-name" placeholder="Full Name">
+                <input type="text" id="edit-rank" placeholder="Rank">
+                <input type="text" id="edit-role" placeholder="Role">
+                <input type="text" id="edit-company" placeholder="Company">
+                <select id="edit-status">
+                    <option value="Active">Active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select>
+                <input type="number" id="edit-missionDuration" placeholder="Mission time (seconds)">
+                <button type="button" onclick="saveSoldier()">Save Changes</button>
+                <button type="button" class="cancel" onclick="cancelEdit()">Cancel</button> <!-- Changed class to cancel -->
+            </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BATTALION FORCE MANAGEMENT</title>
+</head>
+<body>
+    <header>
+        <h1>BATTALION FORCE MANAGEMENT</h1>
+    </header>
+    <main>
+        <section id="create-soldier-section">
+            <h2>Create New Soldier</h2>
+            <form id="soldier-form">
+                <input type="text" id="name" placeholder="Full Name" required><br>
+                <input type="text" id="rank" placeholder="Rank" required><br>
+                <input type="text" id="role" placeholder="Role" required><br>
+                <input type="text" id="company" placeholder="platoon" required><br>
+                <select id="status" required>
+                    <option value="Active">Active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select><br>
+                <input type="number" id="missionDuration" placeholder="Mission time (seconds)" required><br>
+                <button type="submit">Create Soldier</button>
+            </form>
+        </section>
+
+        <section id="soldiers-list-section">
+            <h2>Forces Overview</h2>
+            <button id="sort-button">Ascend/Descend</button>
+            <table id="soldiers-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Rank</th>
+                        <th>Role</th>
+                        <th>platoon</th>
+                        <th>Status</th>
+                        <th>Mission time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="soldiers-body">
+                </tbody>
+            </table>
+        </section>
+
+        <section id="edit-soldier-section">
+            <h2>Edit Soldier</h2>
+            <form>
+                <input type="text" id="edit-name" placeholder="Full Name">
+                <input type="text" id="edit-rank" placeholder="Rank">
+                <input type="text" id="edit-role" placeholder="Role">
+                <input type="text" id="edit-company" placeholder="Company">
+                <select id="edit-status">
+                    <option value="Active">Active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select>
+                <input type="number" id="edit-missionDuration" placeholder="Mission time (seconds)">
+                <button type="button" onclick="saveSoldier()">Save Changes</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html> -->
