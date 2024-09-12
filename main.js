@@ -23,7 +23,7 @@ document.getElementById('soldier-form').addEventListener('submit', function (e) 
 // הצגת רשימת החיילים
 function renderTable() {
     const tbody = document.getElementById('soldiers-body');
-    tbody.innerHTML = ''; // איפוס התוכן
+    tbody.innerHTML = ''; 
 
     soldiers.forEach((soldier, index) => {
         const row = document.createElement('tr');
